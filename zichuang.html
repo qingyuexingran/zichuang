@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>自创网页</title>
+  <style type="text/css">
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+      text-decoration: none;
+  }
+  ul {
+      list-style-type: none;
+  }
+  .clear:after {
+      content: '';
+      height: 0;
+      display: block;
+      clear: both;
+  }
+  a:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  p{
+    line-height: 1.5em;
+  }
+  .yi{
+    margin: 0 auto;
+    width: 900px;
+    line-height: 1;
+  }
+  .yi img{
+    width: 70px;
+    height: 80px;
+    float: left;
+    margin: 0 40px;
+  }
+  .yi li{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 20px 30px;
+  }
+  .yi ul{
+    display: inline-block;
+    float: left;
+  }
+  .yi form{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 20px 60px;
+  }
+  .er{
+    margin: 0 auto;
+  }
+  .ban{
+    width:100%;
+    height: 700px;
+    margin: 0 auto;
+  }
+  .pr{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    top:400px;
+    left:1px;
+  }
+  .ne{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    top:400px;
+    right:1px;
+  }
+  .si{
+    width: 1200px;
+    margin: 0 auto;
+    height: 210px;
+    background-color: red;
+  }
+  .si h2{
+    margin: 0 auto;
+    padding-left: 540px;
+    background: url(./bg-title.png) no-repeat center;
+  }
+  .san{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .san h3{
+    margin: 20px auto;
+    padding-left: 540px;
+    background: url(./bg-title.png) no-repeat center;
+  }
+  .san li{
+    display: inline-block;
+    position: relative;
+  }
+  .sanu img{
+    width: 290px;
+    height: 350px;
+  }
+  .sanz{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 1);
+    background: black;
+  }
+  .sanp{
+    margin: 0 auto;
+    width: 90px;
+  }
+  .wu{
+    width: 1200px;
+    margin: 0 auto;
+    background: aqua;
+  }
+  .wu h2{
+    margin: 20px auto;
+    padding-left: 550px;
+    background: url(./bg-title.png) no-repeat center;
+  }
+  .wu form{
+    width: 250px;
+    margin: 10px auto;
+  }
+  .wu form input{
+    margin: 10px;
+  }
+  .liu{
+    background: rgba(58, 58, 58, 1);
+    height: 120px;
+  }
+  .liu p{
+    margin: 0 auto;
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 1);
+    width: 250px;
+  }
+  .qi{
+    width: 1200px;
+    margin: 30px auto;
+  }
+  .qi ul{
+    margin: 0 auto;
+  }
+  .qi>ul>li{
+    float: left;
+  }
+  .qi li{
+    width: 280px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: fuchsia;
+    display: inline-block;
+  }
+  .qi>ul ul{
+    display: none;
+  }
+  .qi>ul>li:hover ul{
+    display: block;
+  }
+  </style>
+</head>
+<body>
+  <div class="yi clear">
+  	<img src="./logo.jpg">
+  	<ul>
+  		<li><a href="">首页</a></li>
+  		<li><a href="">艺术特色</a></li>
+  		<li><a href="">戏曲行当</a></li>
+  	</ul>
+  	<form>
+  		<input type="text" name="搜索" value="输入搜索内容" class="yit">
+  		<input type="button" value="搜索" name="搜索" class="yib">
+  	</form>
+  </div>
+  <div class="er">
+    <img src="./banner2.jpg" class="ban" />
+    <img src="./prev.png" class="pr"/>
+    <img src="./next.png" class="ne"/>
+  </div>
+  <div class="qi">
+    <ul class="qid clear">
+      <li class="qidi">
+        昆曲
+        <ul class="qix">
+          <li class="qixi">
+            <a href="">发源地</a>
+            <a href="">代表作</a>
+            <a href="">名家</a>
+          </li>
+        </ul>
+      </li>
+      <li class="qidi">
+        京剧
+        <ul class="qix">
+          <li class="qixi">
+            <a href="">发源地</a>
+            <a href="">代表作</a>
+            <a href="">名家</a>
+          </li>
+        </ul>
+      </li>
+      <li class="qidi">
+        越剧
+        <ul class="qix">
+          <li class="qixi">
+            <a href="">发源地</a>
+            <a href="">代表作</a>
+            <a href="">名家</a>
+          </li>
+        </ul>
+      </li>
+      <li class="qidi">
+        黄梅戏
+        <ul class="qix">
+          <li class="qixi">
+            <a href="">发源地</a>
+            <a href="">代表作</a>
+            <a href="">名家</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="si">
+  	<h2>谱色分类</h2>
+  	<p>红脸：表示忠勇耿直，有血性的勇烈人物。如关羽、赵匡胤、姜维等。但也有例外，如《法门寺》中反面人物刘瑾就勾红脸，这里有讽刺之意，使人一看便知是个擅权的太监。
+  	粉红脸：表示年迈气衰，德高望重的忠勇老将。如廉颇、袁绍等。
+  	紫脸：表示刚毅威武、稳重沉着的人物。如常遇春、樊哙等。
+    黄脸：表示武将骁勇善战、残暴，如典韦、宇文成都等。表示文士内有心计，如姬僚等。
+    蓝脸：表示刚直勇猛、桀骜不驯的人物。如窦尔墩、夏侯惇等。
+    绿脸：表示侠骨义肠、性格暴躁的人物。如程咬金、青面虎等。
+    黑脸：表示忠耿正直、铁面无私，或粗率莽撞的人物。如包拯、张飞、夏侯渊等。
+    白脸：又分水白脸和油白脸。水白脸表示阴险奸诈、善用心计。如曹操、赵高、严嵩等。白脸多用于反面人物，但也有例外，如鲁智深、杨延德（杨五郎）等。
+    瓦灰色脸：表示老年枭雄。
+    金银脸：一般用于神、佛、鬼怪，象征虚幻之感。如二郎神、金翅鸟等。也用于一些英勇无敌的将帅或番邦将帅。如李元霸、金兀术等。
+    <a href="">更多>></a>
+    </p>
+  </div>
+  <div class="san"> 
+  	 <h3>四大名旦</h3>
+  	 <div>
+  	 	<ul class="sanu">
+  	 		<li>
+  	 		<img src="./mei.jpg"/>
+  	 		<div class="sanz">
+  	 			<p class="sanp">梅兰芳</p>
+          <p class="sanpp">(1894年10月22日－1961年8月8日），名澜，又名鹤鸣，乳名裙姊，字畹华,别署缀玉轩主人，艺名兰芳，清光绪二十年（1894年）出生于北京，祖籍江苏泰州。</p>
+  	 		</div>
+  	 		</li>
+  	 		<li>
+  	 			<img src="./cheng.jpg"/>
+  	 			<div class="sanz">
+  	 				<p class="sanp">程砚秋</p>
+            <p class="sanpp">（1904年1月1日-1958年3月9日）：男，原名承麟，满族索绰罗氏，满洲正黄旗人。北京人，后改为汉姓程，初名程菊侬，后改艳秋，字玉霜。1932年起更名砚秋，改字御霜。程派艺术的创始人.</p>
+  	 			</div>
+  	 		</li>
+  	 		<li>
+  	 			<img src="./shang.jpg"/>
+  	 			<div class="sanz">
+  	 				<p class="sanp">尚小云</p>
+            <p class="sanpp">（1900年1月7日-1976年4月19日），名德泉，字绮霞。出生于河北邢台市南宫市1900年1月7日。在近六十年的舞台实践中创造出了“文武并重，歌舞兼长，洒脱大方”的京剧尚派艺术，对后世影响极其深远.</p>
+  	 			</div>
+  	 		</li>
+  	 		<li>
+  	 			<img src="./xun.jpg"/>
+  	 			<div class="sanz">
+  	 				<p class="sanp">荀慧生</p>
+            <p class="sanpp">（1900年1月5日-1968年12月26日），荀派艺术的创始人。男，祖籍河北阜城，初名秉超，后改名秉彝，又改名“词”，字慧声，1925年与余叔岩合演《打渔杀家》起改名为荀慧生，号留香，艺名白牡丹。</p>
+  	 			</div>
+  	 		</li>
+  	 	</ul>
+  	 </div>
+  </div>
+  <div class="wu">
+  	<h2>快速登录</h2>
+  	<form>
+  		用户名：
+  		<input type="text" name="用户名" value="请输入用户名" />
+  		密码：
+  		<input type="text" name="密码" value="请输入密码" style="margin-left:25px" />
+  		<input type="submit" value="提交" name="sub" style="margin-left:120px" />
+  	</form>
+  </div>
+  <div class="liu">
+  	<p>版权属于个人所有，禁止抄袭</p>
+  </div>
+</body>
+</html>
